@@ -1,0 +1,12 @@
+result = {
+         "student_name":["uzaifa" , "masaab" , "kazim" , "hasnain"],
+         "student_rollno":[123,456,789,101],
+         "paper1":[89,56,90,91],
+         "paper2":[89,98,78,47],
+         "paper3":[78,89,90,94]
+}
+results = pd.dataframe(result)
+results["total"] =results["paper1"]+result["paper2"]+result["paper3"]
+results["percentage"] = (results["total"]/100)*100
+results["grade"]= [for per in results["percentage"] if (per>=50 & per<=60) results["grade"]=="d"
+                    elif (per >=70 & per<=60) results["grade"]=="c" ]
